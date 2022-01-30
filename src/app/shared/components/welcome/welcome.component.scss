@@ -1,0 +1,16 @@
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h2 {
+    text-align: center;
+  }
+
+  .dialog-content {
+    margin-top: 32px;
+  }
+  .dialog-footer {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,18 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-error',
+  templateUrl: './error.component.html',
+  styleUrls: ['./error.component.scss']
+})
+export class ErrorComponent implements OnInit {
+
+  @Input() public message: string;
+  @Input() public status: number | string;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

@@ -1,12 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WeclomeComponent } from './components/welcome/welcome.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MaterialModule } from '../material.module';
+import { ErrorComponent } from './components/error/error.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    WeclomeComponent,
+    NavbarComponent,
+    ErrorComponent,
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+  ],
+  exports: [
+    ErrorComponent,
+    NavbarComponent,
   ]
 })
 export class SharedModule { }

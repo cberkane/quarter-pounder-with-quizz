@@ -1,0 +1,21 @@
+@import 'variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  align-items: center;
+  background-color: $bg-color2;
+  color: white;
+  height: $nav-y;
+
+  .navbar-right {
+    height: auto;
+
+    button {
+      border-radius: 0;
+      width: 64px;
+      margin: 24px 0;
+    }
+  }
+}
