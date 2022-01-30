@@ -1,0 +1,11 @@
+<section class="container">
+  <!-- Play mode -->
+  <ng-container *ngIf="quizzService.playMode$ | async">
+    <app-quizz-game></app-quizz-game>
+  </ng-container>
+
+  <!-- Scores mode -->
+  <ng-container *ngIf="(quizzService.playMode$ | async) === false">
+    <app-quizz-scores></app-quizz-scores>
+  </ng-container>
+</section>

@@ -1,0 +1,31 @@
+<ng-container *ngIf="error">
+  <div class="flex-container">
+    <app-error class="error" [message]="error"></app-error>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!error">
+  <div class="flex-container">
+    <div class="aside">
+      <div class="aside-item">
+        <h2>Your score</h2>
+        <p [ngClass]="{ green: currentScore > 0, red: currentScore < 0 }">
+          {{ currentScore }}
+        </p>
+      </div>
+
+      <div class="aside-item">
+        <h2>High scores</h2>
+        <ng-container *ngIf="(highScore$ | async) as highScore">
+          <p>{{ highScore.amount }}</p>
+        </ng-container>
+      </div>
+    </div>
+
+    <mat-card class="card">
+      <mat-progress-bar mode="determinate" [value]="(gameDuration * 100) / 60"></mat-progress-bar>
+      <app-quizz-game-item [question]="currentQuestion" (onAnswer)="handleAnswer($event)"></app-quizz-game-item>
+    </mat-card>
+  </div>
+</ng-container>
+

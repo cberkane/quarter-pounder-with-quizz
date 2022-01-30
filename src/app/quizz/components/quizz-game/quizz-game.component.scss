@@ -1,0 +1,46 @@
+@import 'variables';
+
+.flex-container {
+  display: flex;
+  justify-content: start;
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    font-size: 32px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .aside-item {
+    height: 25%;
+
+    h2 {
+      font-weight: lighter;
+    }
+
+    p.green {
+      color: $green;
+    }
+
+    p.red {
+      color: $red;
+    }
+  }
+
+  .card {
+    width: 40%;
+    height: 500px;
+  }
+
+  .error {
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 200px;
+    padding: 48px 16px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,17 @@
+
+.image-container {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .image-actions {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

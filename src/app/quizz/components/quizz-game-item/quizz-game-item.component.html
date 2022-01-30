@@ -1,0 +1,25 @@
+<div class="item">
+
+  <div class="item-image" #imageRef cdkDrag (cdkDragMoved)="onDragMove($event)" (cdkDragEnded)="onDragEnd($event)">
+    <div class="item-movie">
+      <img src="https://m.media-amazon.com/images/I/81UTs3sC5hL._AC_SL1500_.jpg" width="100%" height="100%">
+    </div>
+    <div class="item-actor">
+      <img src="{{question?.actorImgUrl}}"  width="100%" height="100%">
+    </div>
+  </div>
+
+  <ng-container *ngIf="displayAnswer">
+    <div class="item-answer green" *ngIf="isGoodAnswer === true">Bonne réponse</div>
+    <div class="item-answer red" *ngIf="isGoodAnswer === false">Mauvaise réponse</div>
+  </ng-container>
+
+  <div *ngIf="!displayAnswer" class="item-question">
+    {{ question?.questionAsked }}
+  </div>
+
+  <div class="item-buttons">
+    <button mat-raised-button class="green" [ngClass]="{blink: dragPositionX < 0}"  (click)="answerQuestion(true)">yes</button>
+    <button mat-raised-button class="red" [ngClass]="{blink: dragPositionX > 0}" (click)="answerQuestion(false)">no</button>
+  </div>
+</div>
