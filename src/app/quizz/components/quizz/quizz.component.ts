@@ -13,7 +13,7 @@ export class QuizzMainComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.quizzService.setPlayMode(false);
+    this.quizzService.setPlayMode(true);
   }
 
   public init() {
