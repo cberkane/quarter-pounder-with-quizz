@@ -4,6 +4,7 @@ import { WeclomeComponent } from './components/welcome/welcome.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MaterialModule } from '../material.module';
 import { ErrorComponent } from './components/error/error.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
@@ -12,6 +13,7 @@ import { ErrorComponent } from './components/error/error.component';
     WeclomeComponent,
     NavbarComponent,
     ErrorComponent,
+    NotFoundComponent,
   ],
   imports: [
     CommonModule,
@@ -20,6 +22,7 @@ import { ErrorComponent } from './components/error/error.component';
   exports: [
     ErrorComponent,
     NavbarComponent,
+    NotFoundComponent,
   ]
 })
 export class SharedModule { }

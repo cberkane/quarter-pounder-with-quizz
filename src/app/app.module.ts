@@ -1,3 +1,5 @@
+import { SharedModule } from './shared/shared.module';
+import { QuizzModule } from './quizz/quizz.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +16,9 @@ import { MaterialModule } from './material.module';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    QuizzModule,
+    MaterialModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
