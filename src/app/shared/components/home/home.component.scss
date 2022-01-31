@@ -1,0 +1,25 @@
+@import 'variables';
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  padding: 32px;
+  color: $font-color1;
+
+  .text {
+    h2 {
+      font-size: 2.6rem;
+      text-align: center;
+      padding: 32px 0;
+    }
+  }
+
+  app-play-games {
+    width: 500px;
+    position: absolute;
+    top: 90px;
+    left: calc(50% - 250px);
+    z-index: -1;
+  }
+
+}

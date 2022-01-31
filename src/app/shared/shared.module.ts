@@ -5,6 +5,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MaterialModule } from '../material.module';
 import { ErrorComponent } from './components/error/error.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { PlayGamesComponent } from './illustrations/play-games/play-games.component';
 
 
 
@@ -14,6 +16,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     NavbarComponent,
     ErrorComponent,
     NotFoundComponent,
+    HomeComponent,
+    PlayGamesComponent,
   ],
   imports: [
     CommonModule,

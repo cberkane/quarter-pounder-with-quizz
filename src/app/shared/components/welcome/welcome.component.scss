@@ -1,7 +1,10 @@
+@import 'variables';
+
 .dialog-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  color: $font-color1;
 
   h2 {
     text-align: center;
